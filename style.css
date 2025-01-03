@@ -72,3 +72,26 @@ nav ul li a {
 nav ul li a:hover {
     color: #4C4F54; 
 }
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-text{
+    margin-top: 20%;
+    font-size: 30px;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.home-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.home-image{
+    width:50%;
+}
