@@ -39,7 +39,7 @@
             <div class="row">
                 <!-- Image Column -->
                 <div class="about-col-1">
-                    <img src="/IMG-2183.jpg" alt="Second picture (less formal)">
+                    <img src="images\IMG-2183.jpg" alt="Second picture (less formal)">
                 </div>
     
                 <!-- Text Column -->
@@ -85,21 +85,41 @@
         </div>
     </div>
 
+
+    <!-- Projects -->
+    <div id="portfolio">
+        <h1 class="portfolio-title">My Projects</h1>
+        <div class="portfolio-grid">
+            <!-- Project Card 1 -->
+            <div class="card" style="background-image: url('/images/GeoExplore.jpg');">
+                <div class="card-content">
+                    <h2>GeoExplore</h2>
+                    <a href="https://github.com/ethanamessmer/GeoExplore" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="card" style="background-image: url('/path-to-your-image2.jpg');">
+                <div class="card-content">
+                    <h2>Project Title 2</h2>
+                    <a href="https://github.com/your-repository-2" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+    
     <script>
         function opentab(tabName) {
-            // Get all tab-links and remove the active class
             let tabLinks = document.querySelectorAll('.tab-links');
             for (let tab of tabLinks) {
                 tab.classList.remove('active-link');
             }
-    
-            // Get all tab-contents and hide them
+
             let tabContents = document.querySelectorAll('.tab-contents');
             for (let content of tabContents) {
                 content.classList.remove('active-tab');
             }
-    
-            // Add active class to the clicked tab-link and display its content
+
             document.querySelector(`[onclick="opentab('${tabName}')"]`).classList.add('active-link');
             document.getElementById(tabName).classList.add('active-tab');
         }
