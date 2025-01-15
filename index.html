@@ -33,19 +33,78 @@
             <img src="#" alt="Headshot">
         </div>
     </div>
-    
+    <!-- About -->
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col1">
-                    <img src="#" alt="Second picture (less formal)">
+                <!-- Image Column -->
+                <div class="about-col-1">
+                    <img src="/IMG-2183.jpg" alt="Second picture (less formal)">
                 </div>
-                <div class="about-col2">
-                    <h1>About me</h1>
+    
+                <!-- Text Column -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, my name is Ethan Messmer, I'm a software engineering student at 
+                        Iowa State University and originally from the Twin Cities in Minnesota. 
+                        I specialize in Java and DevOps work, but am always interested in a new challenge.
+                        In my spare time, I enjoy video games, rock climbing, and powerlifting. I'm currently available for work and looking for any opportunity!
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    
+                    <!-- Tab Contents -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DevOps</span><br>Worked with Azure DevOps to make templates for CI/CD pipelines both for deploying applications and testing the security of them through automating DAST scanning.</li>
+                            <li><span>Backend design</span><br>Created backend for social media app using SpringBoot and MySQL databases. I also have worked with NodeJS and MongoDB briefly.</li>
+                            <li><span>Frontend design</span><br>Created websites in HTML, CSS, and JS format, as well as brief React experience.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aon - 2024</span><br>DevSecOps Intern: Gained experience collaborating with diverse teams, supporting software deployments, automating Dynamic Application Security Testing (DAST) scans within pipelines, and enhancing CI/CD pipeline templates to improve integration and efficiency.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Chanhassen High School - 2017-2021</span><br>High School Diploma - GPA: 3.67</li>
+                            <li><span>Iowa State University - 2021-2025 (Graduating in December 2025)</span><br>BA of Software Engineering - GPA: 3.10</li>
+                        </ul>
+                    </div>
+                
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function opentab(tabName) {
+            // Get all tab-links and remove the active class
+            let tabLinks = document.querySelectorAll('.tab-links');
+            for (let tab of tabLinks) {
+                tab.classList.remove('active-link');
+            }
+    
+            // Get all tab-contents and hide them
+            let tabContents = document.querySelectorAll('.tab-contents');
+            for (let content of tabContents) {
+                content.classList.remove('active-tab');
+            }
+    
+            // Add active class to the clicked tab-link and display its content
+            document.querySelector(`[onclick="opentab('${tabName}')"]`).classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+    </script>
+    
 
 </body>
 </html>
