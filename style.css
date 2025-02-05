@@ -284,5 +284,11 @@ nav ul li a:hover {
 
 
 #Contact {
+    padding: 80px 20px;
+    color: #DC2011; 
+    background-color: #380F17;
+}
 
+.contact-title {
+    text-align: center; 
 }
