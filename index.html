@@ -12,11 +12,10 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Work Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
         </div>    
@@ -25,12 +24,11 @@
 
     <div id="home">    
         <div class="home-text">   
-            <h1>Hello, My name
-                is Ethan Messmer</h1>
+            <h1>Hello, My name is Ethan Messmer</h1>
             <p>Software Engineering Student</p>
         </div>
-        <div class = "home-image">
-            <img src="images/headshot.jpg" alt="Headshot" width="600px" style="padding-top: 200px;">
+        <div class="home-image">
+            <img src="images/headshot.jpg" alt="Headshot" class="responsive-image">
         </div>
     </div>
     <!-- About -->
@@ -94,17 +92,28 @@
             <div class="card" style="background-image: url('/images/GeoExplore.jpg');">
                 <div class="card-content">
                     <h2>GeoExplore</h2>
-                    <a href="https://github.com/ethanamessmer/GeoExplore" target="_blank">View on GitHub</a>
+                    <a href="https://github.com/ethanamessmer/GeoExplore" target="geoexplore_repo">View on GitHub</a>
                 </div>
             </div>
             <!-- Project Card 2 -->
-            <div class="card" style="background-image: url('/path-to-your-image2.jpg');">
+            <div class="card" style="background-image: url('/images/Power_lines_pillars.jpg');">
                 <div class="card-content">
-                    <h2>Project Title 2</h2>
-                    <a href="https://github.com/your-repository-2" target="_blank">View on GitHub</a>
+                    <h2>GridGPT Frontend</h2>
+                    <a href="#" target="_blank">View team website(available soon)</a>
                 </div>
             </div>
-            <!-- Add more cards as needed -->
+            <div class="card" style="background-image: url('/images/JumboPureTungsten_3.webp');">
+                <div class="card-content">
+                    <h2>DND character creator</h2>
+                    <a href="https://github.com/ethanamessmer/DNDCharacterMaker" target="dnd_repo">View on GitHub</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('/images/Screen-Shot-2019-04-28-at-17.51.16.webp');">
+                <div class="card-content">
+                    <h2>Browser Game website</h2>
+                    <a href="https://github.com/ethanamessmer/Midterm319" target="dnd_repo">View on GitHub</a>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -123,13 +132,33 @@
             document.querySelector(`[onclick="opentab('${tabName}')"]`).classList.add('active-link');
             document.getElementById(tabName).classList.add('active-tab');
         }
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                    });
+                }
+            });
+        });
     </script>
     
 
     <!-- Contact -->
-    <div id="Contact">
+    <div id="contact">
         <h1 class="contact-title">Contact Me</h1>   
-
+        <div class="contact-content">
+            <p class="contact-info">
+                <span class="contact-label">Email:</span> ethanamessmer@gmail.com <br>
+                <span class="contact-label">Phone:</span> 612-741-1304
+            </p>
+        </div>
     </div>
 </body>
 </html>
