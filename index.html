@@ -1,166 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>    
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
-
-    <div id="home">    
-        <div class="home-text">   
-            <h1>Hello, My name is Ethan Messmer</h1>
-            <p>Software Engineering Student</p>
-        </div>
-        <div class="home-image">
-            <img src="images/headshot.jpg" alt="Headshot" class="responsive-image">
-        </div>
+    <div id="home">
+      <div class="home-text">
+        <h1>Hello, My name is Ethan Messmer</h1>
+        <p>Software Engineering Student</p>
+      </div>
+      <div class="home-image">
+        <img
+          src="images/headshot.jpg"
+          alt="Headshot"
+          class="responsive-image"
+        />
+      </div>
     </div>
     <!-- About -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <!-- Image Column -->
-                <div class="about-col-1">
-                    <img src="images\IMG-2183.jpg" alt="Second picture (less formal)">
-                </div>
-    
-                <!-- Text Column -->
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        Hi, my name is Ethan Messmer, I'm a software engineering student at 
-                        Iowa State University and originally from the Twin Cities in Minnesota. 
-                        I specialize in Java and DevOps work, but am always interested in a new challenge.
-                        In my spare time, I enjoy video games, rock climbing, and powerlifting. I'm currently available for work and looking for any opportunity!
-                    </p>
-                    
-                    <div class="tab-titles">
-                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
-                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
-                        <div class="tab-links" onclick="opentab('education')">Education</div>
-                    </div>
-                    
-                    <!-- Tab Contents -->
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>DevOps</span><br>Worked with Azure DevOps to make templates for CI/CD pipelines both for deploying applications and testing the security of them through automating DAST scanning.</li>
-                            <li><span>Backend design</span><br>Created backend for social media app using SpringBoot and MySQL databases. I also have worked with NodeJS and MongoDB briefly.</li>
-                            <li><span>Frontend design</span><br>Created websites in HTML, CSS, and JS format, as well as brief React experience.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Aon - 2024</span><br>DevSecOps Intern: Gained experience collaborating with diverse teams, supporting software deployments, automating Dynamic Application Security Testing (DAST) scans within pipelines, and enhancing CI/CD pipeline templates to improve integration and efficiency.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Chanhassen High School - 2017-2021</span><br>High School Diploma - GPA: 3.67</li>
-                            <li><span>Iowa State University - 2021-2025 (Graduating in December 2025)</span><br>BA of Software Engineering - GPA: 3.10</li>
-                        </ul>
-                    </div>
-                
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="container">
+        <div class="row">
+          <!-- Image Column -->
+          <div class="about-col-1">
+            <img src="images\IMG-2183.jpg" alt="Second picture (less formal)" />
+          </div>
 
+          <!-- Text Column -->
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, my name is Ethan Messmer, I'm a software engineering student
+              at Iowa State University and originally from the Twin Cities in
+              Minnesota. I specialize in Java and DevOps work, but am always
+              interested in a new challenge. In my spare time, I enjoy video
+              games, rock climbing, and powerlifting. I'm currently available
+              for work and looking for any opportunity!
+            </p>
+
+            <div class="tab-titles">
+              <div class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </div>
+              <div class="tab-links" onclick="opentab('experience')">
+                Experience
+              </div>
+              <div class="tab-links" onclick="opentab('education')">
+                Education
+              </div>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>DevOps</span><br />Worked with Azure DevOps to make
+                  templates for CI/CD pipelines both for deploying applications
+                  and testing the security of them through automating DAST
+                  scanning.
+                </li>
+                <li>
+                  <span>Backend design</span><br />Created backend for social
+                  media app using SpringBoot and MySQL databases. I also have
+                  worked with NodeJS and MongoDB briefly.
+                </li>
+                <li>
+                  <span>Frontend design</span><br />Created websites in HTML,
+                  CSS, and JS format, as well as brief React experience. Learning Figma and other UI design tools.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Aon - 2024</span><br />DevSecOps Intern: Gained
+                  experience collaborating with diverse teams, supporting
+                  software deployments, automating Dynamic Application Security
+                  Testing (DAST) scans within pipelines, and enhancing CI/CD
+                  pipeline templates to improve integration and efficiency.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Chanhassen High School - 2017-2021</span><br />High
+                  School Diploma - GPA: 3.67
+                </li>
+                <li>
+                  <span
+                    >Iowa State University - 2021-2025 (Graduating in December
+                    2025)</span
+                  ><br />BA of Software Engineering - GPA: 3.10
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Projects -->
     <div id="portfolio">
-        <h1 class="portfolio-title">My Projects</h1>
-        <div class="portfolio-grid">
-            <!-- Project Card 1 -->
-            <div class="card" style="background-image: url('images/GeoExplore.jpg');">
-                <div class="card-content">
-                    <h2>GeoExplore</h2>
-                    <a href="https://github.com/ethanamessmer/GeoExplore" target="geoexplore_repo">View on GitHub</a>
-                </div>
-            </div>
-            <!-- Project Card 2 -->
-            <div class="card" style="background-image: url('images/Power_lines_pillars.jpg');">
-                <div class="card-content">
-                    <h2>GridGPT Frontend</h2>
-                    <a href="#" target="_blank">View team website(available soon)</a>
-                </div>
-            </div>
-            <!-- Project Card 3 -->
-            <div class="card" style="background-image: url('images/JumboPureTungsten_3.webp');">
-                <div class="card-content">
-                    <h2>DND character creator</h2>
-                    <a href="https://github.com/ethanamessmer/DNDCharacterMaker" target="dnd_repo">View on GitHub</a>
-                </div>
-            </div>
-            <!-- Project Card 4 -->
-            <div class="card" style="background-image: url('images/Screen-Shot-2019-04-28-at-17.51.16.webp');">
-                <div class="card-content">
-                    <h2>Browser Game website</h2>
-                    <a href="https://github.com/ethanamessmer/Midterm319" target="dnd_repo">View on GitHub</a>
-                </div>
-            </div>
+      <h1 class="portfolio-title">My Projects</h1>
+      <div class="portfolio-grid">
+        <!-- Project Card 1 -->
+        <div
+          class="card"
+          style="background-image: url('images/GeoExplore.jpg')"
+        >
+          <div class="card-content">
+            <h2>GeoExplore</h2>
+            <a
+              href="https://github.com/ethanamessmer/GeoExplore"
+              target="geoexplore_repo"
+              >View on GitHub</a
+            >
+          </div>
         </div>
+        <!-- Project Card 2 -->
+        <div
+          class="card"
+          style="background-image: url('images/Power_lines_pillars.jpg')"
+        >
+          <div class="card-content">
+            <h2>GridGPT Frontend</h2>
+            <a href="#" target="_blank">View team website(available soon)</a>
+          </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div
+          class="card"
+          style="background-image: url('images/JumboPureTungsten_3.webp')"
+        >
+          <div class="card-content">
+            <h2>DND character creator</h2>
+            <a
+              href="https://github.com/ethanamessmer/DNDCharacterMaker"
+              target="dnd_repo"
+              >View on GitHub</a
+            >
+          </div>
+        </div>
+        <!-- Project Card 4 -->
+        <div
+          class="card"
+          style="
+            background-image: url('images/Screen-Shot-2019-04-28-at-17.51.16.webp');
+          "
+        >
+          <div class="card-content">
+            <h2>Browser Game website</h2>
+            <a
+              href="https://github.com/ethanamessmer/Midterm319"
+              target="dnd_repo"
+              >View on GitHub</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <script>
-        function opentab(tabName) {
-            let tabLinks = document.querySelectorAll('.tab-links');
-            for (let tab of tabLinks) {
-                tab.classList.remove('active-link');
-            }
-
-            let tabContents = document.querySelectorAll('.tab-contents');
-            for (let content of tabContents) {
-                content.classList.remove('active-tab');
-            }
-
-            document.querySelector(`[onclick="opentab('${tabName}')"]`).classList.add('active-link');
-            document.getElementById(tabName).classList.add('active-tab');
+      function opentab(tabName) {
+        let tabLinks = document.querySelectorAll(".tab-links");
+        for (let tab of tabLinks) {
+          tab.classList.remove("active-link");
         }
 
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
+        let tabContents = document.querySelectorAll(".tab-contents");
+        for (let content of tabContents) {
+          content.classList.remove("active-tab");
+        }
 
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                    });
-                }
-            });
+        document
+          .querySelector(`[onclick="opentab('${tabName}')"]`)
+          .classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", function () {
+          card.classList.toggle("active");
         });
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
     </script>
-    
 
     <!-- Contact -->
     <div id="contact">
-        <h1 class="contact-title">Contact Me</h1>   
-        <div class="contact-content">
-            <p class="contact-info">
-                <span class="contact-label">Email:</span> ethanamessmer@gmail.com <br>
-                <span class="contact-label">Phone:</span> 612-741-1304
-            </p>
-        </div>
+      <h1 class="contact-title">Contact Me</h1>
+      <div class="contact-content">
+        <p class="contact-info">
+          <span class="contact-label">Email:</span> ethanamessmer@gmail.com
+          <br />
+          <span class="contact-label">Phone:</span> 612-741-1304
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

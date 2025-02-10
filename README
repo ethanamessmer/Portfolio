@@ -1,2 +1,27 @@
-This is a website that I am making to refresh my knowledge in html, css, and js as well as have a good portfolio for job applications
-Link to website - https://ethanamessmer.github.io/Portfolio/
+# Portfolio Website
+
+## Description
+This is my personal portfolio website, designed to showcase my projects, skills, and contact information. The purpose of this project is to refresh my knowledge of **HTML**, **CSS**, and **JavaScript** while creating a professional portfolio to support my job applications.
+
+The website is fully responsive, ensuring a seamless experience across devices, and includes interactive elements like project cards and smooth scrolling navigation.
+
+**Live Website:** [https://ethanamessmer.github.io/Portfolio/](https://ethanamessmer.github.io/Portfolio/)
+
+---
+
+## Features
+- **Interactive Project Cards**: Clickable cards that display project details.
+- **Smooth Scrolling**: Smooth transitions when navigating between sections.
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+- **Contact Section**: Easy-to-use contact information for potential employers or collaborators.
+
+---
+
+## Technologies Used
+  - HTML5 
+  - CSS3 (Flexbox, Grid, Media Queries)
+  - JavaScript (DOM Manipulation, Event Handling)
+- **Hosting**: GitHub Pages
+- **Version Control**: Git and GitHub
+
+
